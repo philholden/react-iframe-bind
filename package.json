@@ -1,0 +1,45 @@
+{
+  "name": "iframe-bind",
+  "version": "1.0.0",
+  "description": "Communicate across iFrames",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "devDependencies": {
+    "babel-core": "^4.7.4",
+    "babel-loader": "^4.1.0",
+    "react-hot-loader": "^1.2.2",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0",
+    "css-loader": "^0.9.1",
+    "sass-loader": "^0.4.0",
+    "style-loader": "^0.8.3"
+  },
+  "dependencies": {
+    "react": "^0.13.0",
+    "flux": "^2.0.1",
+    "immutable": "^3.6.2"
+  }
+}

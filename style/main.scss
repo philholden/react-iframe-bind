@@ -1,0 +1,15 @@
+body, html {
+  margin: 0;
+  padding:0;
+}
+
+.MyFrame {
+  display: flex;
+  flex: 1;
+  height: 100%;
+
+  iframe {
+    display: block;
+    flex: 1;
+  }
+}
