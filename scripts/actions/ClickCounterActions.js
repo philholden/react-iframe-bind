@@ -1,18 +1,17 @@
 import ClickCounterDispatcher from '../dispatcher/ClickCounterDispatcher';
 import ClickCounterConstants from '../constants/ClickCounterConstants';
+import windowMessage from '../windowMessage';
 
 let ActionTypes = ClickCounterConstants.ActionTypes;
 
-export default {
-  increment: function() {
-    ClickCounterDispatcher.dispatch({
-      type: ActionTypes.COUNTER_INCREMENT
-    });
-  },
+function send(payload) {
+  return function() {
+    ClickCounterDispatcher.dispatch(payload);
+    windowMessage(payload);
+  };
+}
 
-  decrement: function() {
-    ClickCounterDispatcher.dispatch({
-      type: ActionTypes.COUNTER_DECREMENT
-    });
-  }
+export default {
+  increment: send({type: ActionTypes.COUNTER_INCREMENT}),
+  decrement: send({type: ActionTypes.COUNTER_DECREMENT})
 };

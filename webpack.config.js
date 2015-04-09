@@ -3,14 +3,21 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval',
-  entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
-    './scripts/index'
-  ],
+  entry: {
+    all:[
+      'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/only-dev-server',
+      './scripts/index'
+    ],
+    some:[
+      'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/only-dev-server',
+      './scripts/index2'
+    ]
+  },
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     publicPath: '/scripts/'
   },
   plugins: [

@@ -9,7 +9,10 @@ export default class App extends React.Component {
       <div>
         <h1>Hello, world.</h1>
         <ClickCounterWrapper />
-        <MyFrame url="index2.html" />
+        <div className="frames">
+          <MyFrame url="index2.html" />
+          <MyFrame url="index2.html" />
+        </div>
       </div>
     );
   }

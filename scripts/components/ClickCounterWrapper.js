@@ -4,7 +4,7 @@ import ClickCounterStore from '../stores/ClickCounterStore';
 import ClickCounterActions from '../actions/ClickCounterActions';
 
 export default class ClickCounterWrapper extends React.Component {
-  
+
   componentWillMount(){
     ClickCounterStore.addChangeListener(this._onChange.bind(this));
   }

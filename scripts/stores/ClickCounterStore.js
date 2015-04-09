@@ -2,9 +2,9 @@ import ClickCounterDispatcher from '../dispatcher/ClickCounterDispatcher';
 import ClickCounterConstants from '../constants/ClickCounterConstants';
 import {EventEmitter} from 'events';
 
-var ActionTypes = ClickCounterConstants.ActionTypes;
-var CHANGE_EVENT = 'change';
-var _value = 0;
+let ActionTypes = ClickCounterConstants.ActionTypes;
+let CHANGE_EVENT = 'change';
+let _value = 0;
 
 function _decrement() {
   console.log('dec');
