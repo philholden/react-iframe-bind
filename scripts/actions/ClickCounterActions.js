@@ -7,7 +7,7 @@ let ActionTypes = ClickCounterConstants.ActionTypes;
 function send(payload) {
   return function() {
     ClickCounterDispatcher.dispatch(payload);
-    windowMessage(payload);
+    //windowMessage(payload);
   };
 }
 

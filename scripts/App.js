@@ -2,6 +2,8 @@ import React from 'react';
 import MyFrame from './components/MyFrame';
 import ClickCounterWrapper from './components/ClickCounterWrapper';
 
+window.ClickCounterWrapper = ClickCounterWrapper;
+
 export default class App extends React.Component {
 
   render() {
