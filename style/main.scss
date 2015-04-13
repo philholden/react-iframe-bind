@@ -10,10 +10,123 @@ body, html {
 .MyFrame {
   display: flex;
   flex: 1;
-  height: 100%;
 
   iframe {
     display: block;
     flex: 1;
   }
+}
+
+
+
+
+* {
+  background: rgba(0,0,255,0.1);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex: 1;
+  color: rgba(0,0,100,.5);
+  font-family: Sans-Serif;
+  
+  /* flex-direction: column; */
+}
+
+html {
+  display: flex;
+  min-height: 100%;
+}
+
+.outer {
+  
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: stretch;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.topmenu {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.row {
+  display: flex;
+  flex: 1; 
+  align-items: stretch;   
+}
+
+.item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 10px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: rgba(0,0,255,0);
+}
+
+.clmn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  background: rgba(0,0,255,0.2);
+}
+
+.ourcontent {
+  padding: 0 20px;
+  flex: 1;
+}
+
+.iframes {
+  flex-direction: column;
+  display: flex;
+  width: 150px;
+  margin: 20px;
+}
+
+#ourframe {
+  height: 200px;
+  border: 0px solid black;
+  margin-bottom: 20px;
+}
+
+#thirdparty {
+ height: 200px;
+ border: 0px solid black;
 }
