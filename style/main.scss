@@ -3,23 +3,6 @@ body, html {
   padding:0;
 }
 
-.frames {
-  display: flex;
-}
-
-.MyFrame {
-  display: flex;
-  flex: 1;
-
-  iframe {
-    display: block;
-    flex: 1;
-  }
-}
-
-
-
-
 * {
 //  background: rgba(0,0,255,0.1);
 }

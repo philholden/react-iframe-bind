@@ -1,5 +1,4 @@
 import React from 'react';
-import MyFrame from './components/MyFrame';
 import ClickCounterWrapper from './components/ClickCounterWrapper';
 
 window.exposed = {
