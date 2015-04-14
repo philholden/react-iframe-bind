@@ -17,20 +17,10 @@ export default class App extends React.Component {
             Company
           </div>
           <div className="topmenu">
-            <div className="row">
-              <div className="clmn">
-                <div className="item">Item 1</div>
-              </div>
-              <div className="clmn">
-                <div className="item">Item 2</div>
-              </div>
-              <div className="clmn">
-                <div className="item">Item 3</div>
-              </div>
-              <div className="clmn">
-                <div className="item">Item 4</div>
-              </div>
-            </div> 
+            <div className="item">Item 1</div>
+            <div className="item">Item 2</div>
+            <div className="item">Item 3</div>
+            <div className="item">Item 4</div>
           </div>
         </div>
         <div className="content">

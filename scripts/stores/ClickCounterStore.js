@@ -7,12 +7,10 @@ let CHANGE_EVENT = 'change';
 let _value = 0;
 
 function _decrement() {
-  console.log('dec');
   _value--;
 }
 
 function _increment() {
-  console.log('inc');
   _value++;
 }
 

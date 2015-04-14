@@ -1,5 +1,27 @@
 body, html {
   margin: 0;
   padding:0;
-  background: #ff0;
+  font-family: Arial;
+}
+
+body {
+  margin: 8px 10px;
+  background: rgba(255,255,255,.5);
+  color: rgba(0,0,100,.5);
+  
+}
+
+button {
+  border: 0px solid black;
+  background: #6464FE;;
+  color: white;
+  border-radius: 25px;
+}
+
+button:active {
+  background: rgba(255,255,255,.5);
+}
+
+.ClickCounter span {
+  margin: 0 3px;
 }

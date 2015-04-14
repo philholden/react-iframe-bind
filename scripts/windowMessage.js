@@ -1,12 +1,12 @@
 import ClickCounterDispatcher from './dispatcher/ClickCounterDispatcher';
 
 export default function windowMessage(message) {
-  let allButMe = Array.apply('slice',parent.frames);
-  console.log(parent.frames.length,allButMe);
+  let allButMe = [];
+  for (let i = 0; i < parent.frames.length; i++) {
+    allButMe.push(parent.frames[i]);
+  }
   allButMe.push(parent);
-  console.log(allButMe.indexOf(window),allButMe);
   allButMe.splice(allButMe.indexOf(window),1);
-  console.log('a',allButMe);
   allButMe.forEach(function(win){
     win.postMessage(message, '*');
   });

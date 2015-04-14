@@ -17,6 +17,6 @@ export default class ClickCounter extends React.Component {
 
 ClickCounter.propTypes = {
   value: React.PropTypes.number,
-  onDec: React.PropTypes.function,
-  onInc: React.PropTypes.function,
+  onDec: React.PropTypes.func,
+  onInc: React.PropTypes.func,
 };

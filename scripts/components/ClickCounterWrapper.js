@@ -18,6 +18,7 @@ export default class ClickCounterWrapper extends React.Component {
     this.forceUpdate();
   }
 
+
   render() {
     return (
       <ClickCounter
