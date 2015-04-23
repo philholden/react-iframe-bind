@@ -24,6 +24,7 @@ This demo demonstrates a few things:
 * Compiling SASS to CSS and using JS to dynamically inject styles into the page
 * Use of [Webpack](http://webpack.github.io/) to dynamically package and stream dependencies.
 * Use of npm simultaneously as a client and server side package manager.
+* The use of flex-box only to create a flexible layout. Have a look at the CSS. To get this working in IE11 you will need to change `min-height: 100%` to `height: 100%`.
 
 Also check out the react style branch this demonstrates using `react-style` to style components using in line styles. This provides style isolation for components meaning you do not need to litter your markup with classes purely to apply styles to them.
 
