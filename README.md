@@ -16,7 +16,7 @@ open http://localhost:3000
 This demo demonstrates a few things:
 
 * The [Flux](https://facebook.github.io/flux/docs/overview.html) pattern for communicating between stores and components.
-* Sharing a component's `class` on the parent iframe with children on the same domain by exposing it on the parent's `window` object and instantiating it with the child's `React` instance. It will render using data from the parent's store while DOM is handled on the child. The child will stay in sync with the parent when the child frame is reloaded. And no references to unloaded child should be left on parent. _You could not share a directive in this way in Angular but this demo show how you and share a `factory` between iframe and bind digest cycles together [here](http://plnkr.co/edit/NX66ER0oRpy9fzBrYuTi?p=preview)_
+* Sharing a component's `class` on the parent iframe with children on the same domain by exposing it on the parent's `window` object and instantiating it with the child's `React` instance. It will render using data from the parent's store while DOM is handled on the child. The child will stay in sync with the parent when the child frame is reloaded. And no references to unloaded child should be left on parent. _You could not share a directive in this way in Angular but this demo show how you and share a `factory` between iframes and bind digest cycles together [here](http://plnkr.co/edit/NX66ER0oRpy9fzBrYuTi?p=preview)_
 * A component communicating with an iframe loaded from a different domain using window message events (security restrictions prevent sharing of objects between domains). The child has its own store so if you reload this child the store will be reset to 0.
 * The use of wrapper components to separate data marshalling and rendering concerns
 * [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) to allow html templates in JS
@@ -34,18 +34,4 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 
 This demo was started from [React Hot Boilerplate](https://github.com/gaearon/react-hot-boilerplate). When editing your changes will appear without reloading the browser like in [this video](http://vimeo.com/100010922).
 
-Note it just reloads the files that change not the whole app this is great if your app has a login you don't need to keep logging in.
-
-### Dependencies
-
-* React
-* Webpack
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
-* [babel-loader](https://github.com/babel/babel-loader)
-* [react-hot-loader](https://github.com/gaearon/react-hot-loader)
-
-### Resources
-
-* [Demo video](http://vimeo.com/100010922)
-* [react-hot-loader on Github](https://github.com/gaearon/react-hot-loader)
-* [Integrating JSX live reload into your workflow](http://gaearon.github.io/react-hot-loader/getstarted/)
+Note it just reloads the files that change not the whole app this is great if your app has a login you don't need to keep logging in ([see video](https://vimeo.com/100010922)).
