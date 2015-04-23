@@ -16,7 +16,7 @@ open http://localhost:3000
 This demo demonstrates a few things:
 
 * The [Flux](https://facebook.github.io/flux/docs/overview.html) pattern for communicating between stores and components.
-* Sharing a component's class on the parent iframe with children on the same domain by exposing on the `window` object and instantiating it with the child's `React` instance. It will render using the parent's store and the child will stay in sync with the parent when the child frame is reloaded. _You can see and Angular implementation [here](http://plnkr.co/edit/NX66ER0oRpy9fzBrYuTi?p=preview)_
+* Sharing a component's `class` on the parent iframe with children on the same domain by exposing it on the parent's `window` object and instantiating it with the child's `React` instance. It will render using data from the parent's store while DOM is handled on the child. The child will stay in sync with the parent when the child frame is reloaded. And no references to unloaded child should be left on parent. _You could not share a directive in this way in Angular but this demo show how you and share a `factory` between iframe and bind digest cycles together [here](http://plnkr.co/edit/NX66ER0oRpy9fzBrYuTi?p=preview)_
 * A component communicating with an iframe loaded from a different domain using window message events (security restrictions prevent sharing of objects between domains). The child has its own store so if you reload this child the store will be reset to 0.
 * The use of wrapper components to separate data marshalling and rendering concerns
 * [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) to allow html templates in JS
@@ -26,7 +26,7 @@ This demo demonstrates a few things:
 * Use of npm simultaneously as a client and server side package manager.
 * The use of flex-box only to create a flexible layout. Have a look at the CSS. To get this working in IE11 you will need to change `min-height: 100%` to `height: 100%`.
 
-Also check out the react style branch this demonstrates using `react-style` to style components using in line styles. This provides style isolation for components meaning you do not need to litter your markup with classes purely to apply styles to them.
+Also check out the `react-style` branch this demonstrates using [react-style](https://github.com/js-next/react-style) to style components using in line styles. This provides style isolation for components meaning you do not need to litter your markup with classes purely to apply styles to them. Note react-style is not needed for inline styles [it can be done with plain React](https://facebook.github.io/react/tips/inline-styles.html).
 
 ### Using `0.0.0.0` as Host
 
